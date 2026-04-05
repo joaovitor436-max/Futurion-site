@@ -45,7 +45,7 @@ export default function Header() {
       "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
       isScrolled ? "bg-[var(--color-bg-glass)] backdrop-blur-md border-b border-[var(--color-border-subtle)] py-4" : "bg-transparent py-6"
     )}>
-      <div className="container mx-auto px-6 max-w-[1440px] grid grid-cols-3 items-center">
+      <div className="container mx-auto px-6 max-w-[1440px] flex justify-between items-center lg:grid lg:grid-cols-3">
         
         {/* Logo (Left side) */}
         <div className="flex justify-start">
@@ -65,7 +65,7 @@ export default function Header() {
                   
                   {/* Dropdown Menu */}
                   <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300">
-                    <div className="glass-card overflow-hidden min-w-[200px] flex flex-col p-2">
+                    <div className="bg-[#0A0A0F] border border-[rgba(255,255,255,0.1)] rounded-2xl shadow-xl overflow-hidden min-w-[200px] flex flex-col p-2">
                       {link.dropdown.map((dropLink, dIdx) => (
                         <Link 
                           key={dIdx} 
@@ -146,7 +146,7 @@ export default function Header() {
 
       {/* Mobile Menu Overlay */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 z-40 bg-[var(--color-bg-primary)] pt-24 px-6 lg:hidden">
+        <div className="fixed inset-0 z-40 bg-[#0A0A0F] pt-24 px-6 lg:hidden">
           <div className="flex flex-col gap-6 h-full">
             {/* Lang Switcher Mobile */}
             <div className="flex items-center gap-3 mb-4">

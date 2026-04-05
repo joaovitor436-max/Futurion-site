@@ -197,7 +197,7 @@ export default function FuturionSeeds() {
             {/* CTA Buttons */}
             <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row gap-4 mt-2">
               <HoverButton to="/contato" backgroundColor="var(--color-accent-primary)" textColor="var(--color-bg-primary)" hoverTextColor="var(--color-bg-primary)" glowColor="white">
-                <Rocket size={18} /> {t('seeds.btn_demo')}
+                {t('seeds.btn_demo')}
               </HoverButton>
               <HoverButton href="#funcionalidades" className="!bg-transparent border-[rgba(60,73,78,0.5)] !text-[#a8e8ff] hover:!text-[#a8e8ff]">
                 <PlayCircle size={18} /> {t('seeds.btn_features')}
@@ -415,10 +415,9 @@ export default function FuturionSeeds() {
           
           <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <HoverButton to="/contato" backgroundColor="var(--color-accent-primary)" textColor="var(--color-bg-primary)" hoverTextColor="var(--color-bg-primary)" glowColor="white" className="w-full sm:w-auto !px-12 !py-5 text-lg">
-              <Rocket size={22} className="animate-pulse" /> {t('seeds.cta_btn_demo')}
+              {t('seeds.cta_btn_demo')}
             </HoverButton>
             <HoverButton href="https://wa.me/5551995766416?text=Olá,%20gostaria%20de%20conhecer%20um%20pouco%20mais%20de%20suas%20soluções." target="_blank" rel="noopener noreferrer" glowColor="#25D366" className="!bg-transparent border-[#25D366] !text-[#25D366] hover:!text-[#25D366] w-full sm:w-auto !px-12 !py-5 text-lg">
-              <MessageSquare size={22} />
               {t('seeds.cta_btn_expert')}
             </HoverButton>
           </motion.div>

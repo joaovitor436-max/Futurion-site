@@ -676,7 +676,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             <MetricCounter value={t('home.stats.0.value')} label={t('home.stats.0.label')} description={t('home.stats.0.desc')} />
-            <MetricCounter value={t('home.stats.1.value')} suffix="%" label={t('home.stats.1.label')} description={t('home.stats.1.desc')} />
+            <MetricCounter value={t('home.stats.1.value')} label={t('home.stats.1.label')} description={t('home.stats.1.desc')} />
             
             <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once:true }} className="glass-card p-8 flex flex-col gap-4">
               <div className="font-display font-bold text-5xl md:text-6xl hero-gradient-text w-max">

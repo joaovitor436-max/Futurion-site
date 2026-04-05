@@ -15,8 +15,8 @@ export const translations = {
       overline: "◆ SOFTWARE HOUSE DO FUTURO", 
       headline: "Transformamos ideias em tecnologia que define o amanhã", 
       subtitle: "Desenvolvemos websites modernos, agentes de IA personalizados, aplicativos inteligentes e sistemas sob medida que já nascem com inteligência artificial integrada.",
-      btnPrimary: "🚀 Quero Conhecer os Produtos",
-      btnSecondary: "💬 Quero Falar com um Especialista",
+      btnPrimary: "Quero Conhecer os Produtos",
+      btnSecondary: "Quero Falar com um Especialista",
       badge: "✦ +50 projetos entregues · ✦ IA nativa em todas as soluções · ✦ 100% cloud",
       scroll: "Descubra mais"
     },
@@ -54,7 +54,7 @@ export const translations = {
       final_cta_overline: "Ready to Evolve?",
       final_cta_headline: "Pronto para levar sua operação para o futuro?",
       final_cta_subtitle: "Vamos conversar sobre como a Futurion pode transformar sua empresa com tecnologia de verdade.",
-      final_cta_btn: "🚀 Quero Agendar minha Reunião",
+      final_cta_btn: "Quero Agendar minha Reunião",
       whatsapp: "WhatsApp Direto"
     },
     solutions_page: {
@@ -85,7 +85,7 @@ export const translations = {
       tagline: "Gestão de Armazenagem Inteligente",
       badge: "✦ Produto Futurion",
       hero_headline: "Gestão Total do seu Estoque em Tempo Real",
-      hero_description: "O Futurion Seeds é a plataforma SaaS de gestão de insumos agrícolas mais precisa do mercado. Dashboard intuitivo, controle de temperatura, checklists inteligentes e rastreabilidade completa — tudo em um único sistema.",
+      hero_description: "O Futurion Seeds é a plataforma WMS de gestão de insumos agrícolas mais precisa do mercado. Dashboard intuitivo, controle de temperatura, checklists inteligentes e rastreabilidade completa — tudo em um único sistema.",
       feature_pills: ["Dashboard Administrativo", "Checklist de Temperatura", "Rastreabilidade FEFO", "Multi-Armazéns"],
       btn_demo: "Quero Solicitar minha Demo",
       btn_features: "Ver Funcionalidades",
@@ -315,7 +315,7 @@ export const translations = {
         "Outro"
       ],
       form_label_message: "Sua mensagem",
-      form_btn: "🚀 Quero Enviar minha Mensagem",
+      form_btn: "Quero Enviar minha Mensagem",
       form_btn_sending: "Enviando...",
       form_btn_success: "Mensagem Enviada!",
       form_success_msg: "Recebemos sua mensagem! Retornaremos em breve."
@@ -337,8 +337,8 @@ export const translations = {
       overline: "◆ SOFTWARE HOUSE OF THE FUTURE", 
       headline: "We transform ideas into technology that defines tomorrow", 
       subtitle: "We develop modern websites, custom AI agents, intelligent apps, and tailored systems born with integrated artificial intelligence.",
-      btnPrimary: "🚀 I want to Discover Our Products",
-      btnSecondary: "💬 I want to Talk to an Expert",
+      btnPrimary: "I want to Discover Our Products",
+      btnSecondary: "I want to Talk to an Expert",
       badge: "✦ +50 projects delivered · ✦ Native AI in all solutions · ✦ 100% cloud",
       scroll: "Discover more"
     },
@@ -376,7 +376,7 @@ export const translations = {
       final_cta_overline: "Ready to Evolve?",
       final_cta_headline: "Ready to take your operation to the future?",
       final_cta_subtitle: "Let's talk about how Futurion can transform your company with real technology.",
-      final_cta_btn: "🚀 I want to Schedule my Meeting",
+      final_cta_btn: "I want to Schedule my Meeting",
       whatsapp: "Direct WhatsApp"
     },
     solutions_page: {
@@ -407,7 +407,7 @@ export const translations = {
       tagline: "Intelligent Warehouse Management",
       badge: "✦ Futurion Product",
       hero_headline: "Total Management of your Inventory in Real Time",
-      hero_description: "Futurion Seeds is the most accurate agricultural input management SaaS platform on the market. Intuitive dashboard, temperature control, intelligent checklists, and full traceability — all in one system.",
+      hero_description: "Futurion Seeds is the most accurate agricultural input management WMS platform on the market. Intuitive dashboard, temperature control, intelligent checklists, and full traceability — all in one system.",
       feature_pills: ["Admin Dashboard", "Temperature Checklist", "FEFO Traceability", "Multi-Warehouse"],
       btn_demo: "I want to Request my Demo",
       btn_features: "See Features",
@@ -637,7 +637,7 @@ export const translations = {
         "Other"
       ],
       form_label_message: "Your message",
-      form_btn: "🚀 I want to Send my Message",
+      form_btn: "I want to Send my Message",
       form_btn_sending: "Sending...",
       form_btn_success: "Message Sent!",
       form_success_msg: "We received your message! We will return soon."
