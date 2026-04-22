@@ -372,7 +372,7 @@ export default function Home() {
                     </div>
                     
                     <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[rgba(255,255,255,0.05)] to-transparent border border-[rgba(255,255,255,0.1)] flex items-center justify-center text-[var(--color-accent-primary)] mb-8 transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-[0_8px_16px_rgba(0,0,0,0.2)] group-hover:shadow-[0_0_20px_rgba(0,212,255,0.3)]">
-                      {icons[idx] || '🚀'}
+                      {icons[idx]}
                     </div>
                     <h3 className="font-display font-bold text-2xl mb-4 relative z-10 text-white tracking-tight">{service.title}</h3>
                     <p className="text-[var(--color-text-secondary)] leading-relaxed relative z-10 text-[15px] font-light">{service.desc}</p>
