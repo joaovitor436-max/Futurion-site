@@ -4,6 +4,8 @@ import Home from './pages/Home';
 import Solutions from './pages/Solutions';
 import FuturionSeeds from './pages/FuturionSeeds';
 import FuturionStock from './pages/FuturionStock';
+import FuturionLux from './pages/FuturionLux';
+import FuturionMed from './pages/FuturionMed';
 import Partners from './pages/Partners';
 import Contact from './pages/Contact';
 import Header from './components/Header';
@@ -20,6 +22,8 @@ function Layout() {
           <Route path="/solucoes" element={<Solutions />} />
           <Route path="/produtos/futurion-seeds" element={<FuturionSeeds />} />
           <Route path="/produtos/futurion-stock" element={<FuturionStock />} />
+          <Route path="/produtos/futurion-lux" element={<FuturionLux />} />
+          <Route path="/produtos/futurion-med" element={<FuturionMed />} />
           <Route path="/parceiros" element={<Partners />} />
           <Route path="/contato" element={<Contact />} />
         </Routes>

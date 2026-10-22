@@ -48,6 +48,8 @@ export default function Footer() {
     { name: t('nav.solutions'), path: '/solucoes' },
     { name: 'Seeds', path: '/produtos/futurion-seeds' },
     { name: 'Stock', path: '/produtos/futurion-stock' },
+    { name: 'Lux', path: '/produtos/futurion-lux' },
+    { name: 'Med', path: '/produtos/futurion-med' },
     { name: t('nav.partners'), path: '/parceiros' },
     { name: t('nav.contact'), path: '/contato' }
   ];

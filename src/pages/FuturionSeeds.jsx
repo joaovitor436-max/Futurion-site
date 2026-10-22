@@ -417,7 +417,7 @@ export default function FuturionSeeds() {
             <HoverButton to="/contato" backgroundColor="var(--color-accent-primary)" textColor="var(--color-bg-primary)" hoverTextColor="var(--color-bg-primary)" glowColor="white" className="w-full sm:w-auto !px-12 !py-5 text-lg">
               {t('seeds.cta_btn_demo')}
             </HoverButton>
-            <HoverButton href="https://wa.me/5551995766416?text=Olá,%20gostaria%20de%20conhecer%20um%20pouco%20mais%20de%20suas%20soluções." target="_blank" rel="noopener noreferrer" glowColor="#25D366" className="!bg-transparent border-[#25D366] !text-[#25D366] hover:!text-[#25D366] w-full sm:w-auto !px-12 !py-5 text-lg">
+            <HoverButton href={t('contact.whatsapp_url')} target="_blank" rel="noopener noreferrer" glowColor="#25D366" className="!bg-transparent border-[#25D366] !text-[#25D366] hover:!text-[#25D366] w-full sm:w-auto !px-12 !py-5 text-lg">
               {t('seeds.cta_btn_expert')}
             </HoverButton>
           </motion.div>

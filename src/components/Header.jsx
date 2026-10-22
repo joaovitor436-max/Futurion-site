@@ -33,7 +33,9 @@ export default function Header() {
       path: '#',
       dropdown: [
         { name: 'Futurion Seeds', path: '/produtos/futurion-seeds' },
-        { name: 'Futurion Stock', path: '/produtos/futurion-stock' }
+        { name: 'Futurion Stock', path: '/produtos/futurion-stock' },
+        { name: 'Futurion Lux', path: '/produtos/futurion-lux' },
+        { name: 'Futurion Med', path: '/produtos/futurion-med' }
       ]
     },
     { name: t('nav.partners'), path: '/parceiros' },
@@ -177,6 +179,8 @@ export default function Header() {
                 <span className="text-sm text-[var(--color-text-muted)] uppercase tracking-wider">{t('nav.products')}</span>
                 <Link to="/produtos/futurion-seeds" className="text-lg" onClick={() => setMobileMenuOpen(false)}>Futurion Seeds</Link>
                 <Link to="/produtos/futurion-stock" className="text-lg" onClick={() => setMobileMenuOpen(false)}>Futurion Stock</Link>
+                <Link to="/produtos/futurion-lux" className="text-lg" onClick={() => setMobileMenuOpen(false)}>Futurion Lux</Link>
+                <Link to="/produtos/futurion-med" className="text-lg" onClick={() => setMobileMenuOpen(false)}>Futurion Med</Link>
               </div>
               <Link to="/parceiros" onClick={() => setMobileMenuOpen(false)}>{t('nav.partners')}</Link>
               <Link to="/contato" onClick={() => setMobileMenuOpen(false)}>{t('nav.contact')}</Link>
