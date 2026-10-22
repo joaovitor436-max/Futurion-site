@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { 
   ChevronDown, ArrowRight, CheckCircle2, MessageSquare, Globe, Layout, Bot, Smartphone, 
   Cpu, Brain, Cloud, MapPin, Thermometer, ClipboardCheck, Activity, BarChart3, 
-  Sparkles, ShieldCheck, Zap, Server, Boxes, FileSpreadsheet, Mic, LayoutDashboard, Eye, Settings, Download, Users, AlertTriangle, Search, Map
+  Sparkles, ShieldCheck, Zap, Server, Boxes, FileSpreadsheet, Mic, LayoutDashboard, Eye, Settings, Download, Users, AlertTriangle, Search, Map, Gem, Stethoscope
 } from 'lucide-react';
 import { GlobeInteractive } from '../components/GlobeInteractive';
 import { HoverButton } from '../components/HoverButton';
@@ -660,6 +660,46 @@ export default function Home() {
                </div>
             </div>
           </div>
+
+          {/* Separator */}
+          <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-[var(--color-border-accent)] to-transparent my-16 opacity-50"></div>
+
+          {/* Block 3 - Futurion Lux & Futurion Med */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {[
+              { ns: 'lux', logo: '/luxlogo.png', name: 'Futurion Lux', path: '/produtos/futurion-lux', accent: '#D4AF37', icon: <Gem size={24} /> },
+              { ns: 'med', logo: '/medlogo.png', name: 'Futurion Med', path: '/produtos/futurion-med', accent: '#A3E635', icon: <Stethoscope size={24} /> }
+            ].map((product) => (
+              <motion.div
+                key={product.ns}
+                initial="hidden" whileInView="visible" viewport={{ once: true }} variants={staggerContainer}
+                className="backdrop-blur-xl rounded-[3rem] p-8 md:p-12 relative overflow-hidden flex flex-col items-start border"
+                style={{ background: product.accent + '05', borderColor: product.accent + '26', boxShadow: `0 0 80px ${product.accent}0D` }}
+              >
+                <div className="absolute -top-24 -right-24 w-[400px] h-[400px] rounded-full blur-[120px] pointer-events-none" style={{ background: product.accent + '14' }}></div>
+                <motion.img variants={fadeInUp} src={product.logo} alt={`${product.name} Logo`} className="h-12 md:h-14 w-auto mb-6 object-contain relative z-10" />
+                <motion.h3 variants={fadeInUp} className="text-3xl md:text-4xl font-display font-bold mb-5 leading-[1.15] text-white relative z-10">
+                  {t(`${product.ns}.hero_headline`)}
+                </motion.h3>
+                <motion.p variants={fadeInUp} className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed font-light relative z-10">
+                  {t(`${product.ns}.hero_description`)}
+                </motion.p>
+                <motion.ul variants={fadeInUp} className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-10 w-full relative z-10">
+                  {(t(`${product.ns}.features_list`) || []).map((feat) => (
+                    <li key={feat.title} className="flex items-center gap-3 text-white/80 text-sm">
+                      <CheckCircle2 size={18} style={{ color: product.accent }} className="shrink-0" />
+                      {feat.title}
+                    </li>
+                  ))}
+                </motion.ul>
+                <motion.div variants={fadeInUp} className="mt-auto relative z-10">
+                  <HoverButton to={product.path} backgroundColor={product.accent} textColor="#0A0A0F" hoverTextColor="#0A0A0F" glowColor="white">
+                    {product.icon} {t(`${product.ns}.home_cta`)}
+                  </HoverButton>
+                </motion.div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -737,7 +777,7 @@ export default function Home() {
                   {t('home.final_cta_btn')}
                 </HoverButton>
                 
-                <HoverButton href="https://wa.me/5551995766416?text=Olá,%20gostaria%20de%20conhecer%20um%20pouco%20mais%20de%20suas%20soluções." target="_blank" rel="noopener noreferrer" glowColor="#25D366" className="!bg-transparent border-[rgba(37,211,102,0.4)] !text-[#25D366] hover:!bg-[rgba(37,211,102,0.05)] w-full sm:w-auto !px-14 !py-6 text-xl font-bold">
+                <HoverButton href={t('contact.whatsapp_url')} target="_blank" rel="noopener noreferrer" glowColor="#25D366" className="!bg-transparent border-[rgba(37,211,102,0.4)] !text-[#25D366] hover:!bg-[rgba(37,211,102,0.05)] w-full sm:w-auto !px-14 !py-6 text-xl font-bold">
                   <MessageSquare size={24} className="mr-2" /> {t('home.whatsapp')}
                 </HoverButton>
               </motion.div>

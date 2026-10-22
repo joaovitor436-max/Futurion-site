@@ -158,10 +158,10 @@ export default function Contact() {
                 <Mail size={36} />
               </div>
               <h3 className="text-3xl font-display font-bold mb-4">{t('contact.card_email_title')}</h3>
-              <p className="text-[var(--color-text-primary)] mb-2 font-semibold text-xl tracking-tight">contato@futurion.com.br</p>
+              <p className="text-[var(--color-text-primary)] mb-2 font-semibold text-xl tracking-tight">contato@futurionbr.com</p>
               <p className="text-[var(--color-text-secondary)] mb-10 text-base opacity-80">{t('contact.card_email_note')}</p>
               <HoverButton
-                href="mailto:contato@futurion.com.br"
+                href="mailto:contato@futurionbr.com"
                 backgroundColor="var(--color-accent-primary)"
                 glowColor="rgba(0,212,255,0.4)"
                 className="w-full mt-auto !py-5 uppercase tracking-widest text-sm font-black"
@@ -198,7 +198,7 @@ export default function Contact() {
               <p className="text-[var(--color-text-primary)] mb-2 font-semibold text-xl tracking-tight">{t('contact.card_location_value')}</p>
               <p className="text-[var(--color-text-secondary)] mb-10 text-base opacity-80">{t('contact.card_location_note')}</p>
               <HoverButton
-                onClick={() => window.open("https://maps.google.com", "_blank")}
+                onClick={() => window.open("https://www.google.com/maps/search/?api=1&query=Ed%C3%A9ia%2C%20GO", "_blank")}
                 backgroundColor="var(--color-accent-tertiary)"
                 glowColor="rgba(123,97,255,0.4)"
                 className="w-full mt-auto !py-5 uppercase tracking-widest text-sm font-black"
